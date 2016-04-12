@@ -1,6 +1,7 @@
 # -*- coding:UTF-8 -*-
-from com.um.ykang.Constance import Constance
+
 import os
+from com.um.ykang.mission.Constance import Constance
 
 class MissionConf:
     def __init__(self):

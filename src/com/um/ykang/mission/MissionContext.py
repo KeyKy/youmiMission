@@ -1,7 +1,8 @@
 import os
+from com.um.ykang.mission import MNode
+from com.um.ykang.util.BashUtil import BashUtil
 
-import com.um.ykang.MNode as MNode
-from com.um.ykang.BashUtil import BashUtil
+
 
 class MissionContext:
     def __init__(self, conf):
