@@ -63,7 +63,8 @@ class MissionContext:
     
     def submit(self, mem='3G', coreN='4', taskN='3', coreMulti='1'):
         os.system(' '.join(['cd', self.conf.getCodePath(), '&&', \
-                             './'+self.conf.getEmrFile(), mem, coreN, taskN, coreMulti]))
+                             './'+self.conf.getEmrFile(), self.conf.getAppName(),\
+                              mem, coreN, taskN, coreMulti]))
         
         
         

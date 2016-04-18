@@ -66,7 +66,7 @@ if __name__ == '__main__':
     qPackageToId = Qpackage.getQpackageToId()
  
     sparseX = NearestNeighboor.sparseX(Candidate.PART_FILE_NAME[0], 
-                                             Quser.QCUSTOM_OPENPACKAGE_PATH, 
+                                             Quser.QUSER_OPENPACKAGE_PATH, 
                                              candToId, qPackageToId, 
                                              (len(candToId.keys()),len(qPackageToId.keys())))
      
@@ -77,7 +77,7 @@ if __name__ == '__main__':
     qUserInCandToId = Candidate.getCandidateToId(qUserInCand)
     qUserInCand = list(qUserInCand)
     model1 = NearestNeighboor()
-    model1.train(sparseX,topK=100,metric='euclidean')
+    model1.train(sparseX,topK=10,metric='euclidean')
     start = 0
     for (trainSlice, testSlice) in crossValidSplit(len(qUserInCand)):
         print 'predicting slice ' + str(start)

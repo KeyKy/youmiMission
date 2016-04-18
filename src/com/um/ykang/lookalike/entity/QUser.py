@@ -4,7 +4,7 @@ from com.um.ykang.data.format.File import SepFile, LineFile
 class Quser(object):
     QUSER_ID_TXT = '/root/Downloads/look-alike/data/dict/qUserToId.txt'
     TOTAL_QUSER_TXT = '/root/Downloads/look-alike/data/payQualityUsers/payQualityUsers.txt'
-    QCUSTOM_OPENPACKAGE_PATH = '/root/Downloads/look-alike/data/qCustomerOpenPackageInfo'
+    QUSER_OPENPACKAGE_PATH = '/root/Downloads/look-alike/data/qCustomerOpenPackageInfo'
     
     @staticmethod
     def writeQuserToId():
@@ -50,7 +50,7 @@ class Quser(object):
         return idToQuser
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 #     user = set()
 #     f = SepFile(',').open('/root/Downloads/look-alike/data/payQualityUsers/payQualityUsers.txt', 'txt', 'r')
 #     for line in f:
@@ -60,7 +60,7 @@ if __name__ == '__main__':
 #         user.add(username)
 #     f.close()
 #     print len(user)
-    print 'return'
+#     print 'return'
 
 
         

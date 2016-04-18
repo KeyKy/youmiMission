@@ -24,7 +24,7 @@ class BashUtil(object):
     @staticmethod
     def gzipDecompress(src):
         command = 'gzip'
-        parms = '-dv'
+        parms = '-dvk'
         os.system(' '.join([command, parms, src]))
     
     @staticmethod
